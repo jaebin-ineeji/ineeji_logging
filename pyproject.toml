@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ineeji_logging"
+version = "0.1.0"
+authors = [
+    {name = "ineeji Team", email = "jaebin@ineeji.com"},
+]
+description = "ineeji 프로젝트를 위한 공통 로깅 라이브러리"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fastparquet>=0.4.1",
+    "pandas>=0.25.3",
+    "tzdata>=2025.2",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jaebin-ineeji/ineeji_logging"
+"Bug Tracker" = "https://github.com/jaebin-ineeji/ineeji_logging/issues"
+
+[tool.hatch.build]
+packages = ["ineeji_logging"] 
